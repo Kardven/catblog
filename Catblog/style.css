@@ -1,0 +1,189 @@
+* {
+  font-family: 'Mulish', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smothing: antialiased;
+  -moz-osx-font-smothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+#app {
+  max-width: 42.5rem;
+  display: grid;
+  height: 100vh;
+  grid-template-rows: max-content 1fr max-content;
+}
+
+header {
+  width: 100%;
+  background-color: #387E96;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 90rem;
+}
+
+header form {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  flex: 1;
+}
+
+.input-wrapper label {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 1.6rem;
+  background-color: rgb(37, 94, 125);
+  border: 0;
+  border-radius: .6rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: white;
+}
+
+.input-wrapper input.placeholder {
+  opacity: 0.6;
+  color: black;
+}
+
+.avatar {
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+header, nav {
+  display: flex;
+  gap: 2rem; /* Ajuste o gap conforme necessário */
+  align-items: center;
+}
+header nav img{
+  border-radius: 50%;
+}
+main {
+  max-width: 102.2rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.parte1 h2 {
+  font-size: 2.4rem;
+  line-height: 160%;
+}
+
+.parte1 img {
+  width: 100%;
+}
+
+.headline {
+  max-width: 34.2rem;
+  max-height: 8.6rem;
+  margin-top: 3.1rem;
+  padding-bottom: 10rem;
+  margin-left: 2.2rem;
+}
+
+.headline > img + img {
+  margin-right: 5.0rem;
+}
+
+.like {
+  width: 9.0rem;
+  height: 2.0rem;
+  display: inline-block;
+  width: 10%;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-right: .6rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 160%;
+  margin-top: 2.2rem;
+  margin-left: 2.4rem;
+  margin-right: 2.4rem;
+  margin-bottom: 3.4rem;
+}
+
+.gallery H2 {
+  font-size: 2.4rem;
+  line-height: 160%;
+  margin-bottom: 3.2rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-left: 2.4rem;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  max-width: 38.2rem;
+  max-height: 8.4rem;
+  margin-bottom: 3.2rem;
+}
+
+.card h3 {
+  width: fit-content;
+}
+
+.card p {
+  font-size: 1.4rem;
+  line-height: 100%;
+}
+
+.card span {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.card p span {
+  line-height: 160%;
+  display: block;
+}
+
+@media (min-width: 700px) {
+  main {
+    margin: 0 auto;
+    max-width: 102.2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .parte1 {
+    flex: 1;
+  }
+
+  .gallery {
+    max-width: 38.2rem;
+    max-height: 61.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-left: 2.4rem;
+  }
+}
